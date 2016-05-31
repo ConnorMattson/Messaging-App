@@ -1,6 +1,10 @@
 # Messaging-App
 ##### My messaging app for 13 Computer Science 2016
+###### Requirements:
+Python 3 (created in 3.3.3 but more recent versions should work)
 
+Windows 7 (Other Windows versions may work but have not been tested)
+###### Instructions:
 The server must be running in order to open the client.
 
 The server uses port 3600
