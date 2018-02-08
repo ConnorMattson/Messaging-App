@@ -243,6 +243,8 @@ class App:
             gpg = gnupg.GPG(verbose=True, gpgbinary='lib\\gpg.exe', gnupghome='data\\' + clientName + '\\GPGKey')
             gpg.list_keys()
             password = proposedPassword
+            if not os.path.exists('data\\' + clientName + '\\messages'):
+                os.makedirs('data\\' + clientName + '\\messages')
             self.chooseRoom()
 
         elif waitingOnResponse == 'False':
