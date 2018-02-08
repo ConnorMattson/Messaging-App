@@ -10,7 +10,8 @@ serverSocket.listen(10)
 usersOnline = {}
 
 gpg = gnupg.GPG(verbose=True, gpgbinary='lib\gpg.exe', gnupghome='data\\GPGKey')
-
+if not os.path.exists('data\\messages'):
+    os.makedirs('data\\messages')
 
 print ('*****************************************************************************\n\nserver running...')
 
